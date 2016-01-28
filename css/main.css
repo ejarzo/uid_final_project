@@ -1,10 +1,19 @@
 * {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
 }
+
 html, body {
     margin: 0;
     padding: 0;
+    color: #333;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
 }
 #wrapper {
     width: 100%;
@@ -13,12 +22,52 @@ html, body {
 }
 header {
     width: 100%;
-    height: 100px;
-    background-color: #DDD;
+    height: 150px;
+/*    background-color: #DDD;*/
+    position: relative;
+}
+header ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header ul li {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-left: 5px;
+    border: 2px solid #333;
+/*    background-color: #777;*/
+}
+header h1 {
+    font-weight: 400;
+    border-bottom: 2px solid #333;
+    position: absolute;
+    left: 150px;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+}
+header h3 {
+    position: absolute;
+    font-weight: 200;
+    font-style: italic;
+    left: 214px;
+    top: 70px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    color: #d33e52;
 }
 nav {
     width: 100%;
     height: 40px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+
     background-color: #CCC;
     text-align: center;
     overflow: hidden;
@@ -30,12 +79,37 @@ nav a {
     padding: 0;
     width: 25%;
     height: 40px;
-    padding-top: 12px;
+    padding-top: 9px;
     background-color: #FFF;
-    color: #ba1d2a;
+    color: #d33e52;
     text-decoration: none;
 }
 nav a:hover {
     color: #FFF;
-    background-color: #ba1d2a;
+    background-color: #d33e52;
+}
+#logo {
+    margin-top: 15px;
+    width: 130px;
+    height: 130px;
+/*    background-color: #777;*/
+}
+#logo img{
+    width: 100%;
+}
+#slideshow {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    border: 2px solid #DDD;
+}
+footer {  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+    border-top: 2px solid #333;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+/*    background-color: #DDD;*/
 }
