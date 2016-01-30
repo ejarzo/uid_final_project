@@ -4,6 +4,7 @@
 }
 a, a:visited {
     color: #333;
+    text-decoration: none;
 }
 a:hover {
     color: #d33e52;
@@ -18,7 +19,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin-bottom: 90px;
+    margin-bottom: 160px;
 }
 #wrapper {
     width: 100%;
@@ -43,7 +44,10 @@ header ul li {
     width: 30px;
     float: right;
     margin-left: 5px;
-    border: 1px solid #DDD;
+    /*border: 1px solid #DDD;*/
+}
+header ul li img{
+    width: 100%;
 }
 header h1 {
     font-weight: 400;
@@ -112,6 +116,14 @@ nav a:hover, nav .dropdown:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+footer {  
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    max-width: 1000px;
+    border-top: 2px solid #333;
+    height: 160px;
+}
 header .logo {
     margin-top: 15px;
     width: 130px;
@@ -123,35 +135,41 @@ header .logo {
 footer .logo{
     margin: 0 auto;
 }
+footer a, footer a:visited {
+    color: #d33e52;
+}
+footer a:hover {
+    color: #333;
+}
 footer ul {
+    margin-top: 40px;
     list-style: none;
     padding: 0;
     text-align: center;
 }
 footer ul li {
     display: inline-block;
-    width: 100px;
+/*    width: 100px;*/
     vertical-align: middle;
-    text-align: center;
-    padding: 0 10px 0 10px;
+    text-align: left;
+    padding: 0 20px 0 20px;
 }
+
 footer .logo {
-    width: 50px;
+    width: 70px;
 }
-footer h4 {
-    float: left;
+footer h3 {
+    padding-bottom: 7px;
+    margin: 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+}
+footer p {
+    margin: 0
 }
 #slideshow {
     margin-top: 20px;
     width: 100%;
     height: 400px;
     border: 1px solid #DDD;
-}
-footer {  
-    position: absolute;
-    bottom: -20px;
-    width: 100%;
-    max-width: 1000px;
-    border-top: 2px solid #333;
-    height: 90px;
 }
