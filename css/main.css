@@ -105,6 +105,7 @@ nav a:hover, nav .dropdown:hover {
     background-color: transparent;
     width: 25%;
     max-width: 250px;
+    min-width: 150px;
     padding-top: 11px;
 }
 .dropdown-content a {
