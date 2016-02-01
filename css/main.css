@@ -11,6 +11,10 @@ a, a:visited {
 a:hover {
     color: #d33e52;
 }
+h1 {
+    font-weight: 400;
+    padding: 0;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -90,16 +94,18 @@ nav a, nav .dropdown, nav a:visited {
     padding: 0;
     width: 25%;
     height: 40px;
-    padding-top: 9px;
+    padding-top: 7px;
     background-color: #FFF;
     color: #d33e52;
     text-decoration: none;
 }
 nav a:hover, nav .dropdown:hover {
     color: #FFF;
-    background-color: #d33e52;
+    background-color: #d33e52 !important;
     cursor: pointer;
 }
+
+/* ------------ DROPDOWN ------------ */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -119,6 +125,66 @@ nav a:hover, nav .dropdown:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.active-page{
+    background-color: #d33e52 !important;
+    color: #FFF !important;
+}
+
+/* ------------ Anfängerkurse ------------ */
+
+.anfaengerkurse{
+    width: 80%;
+    margin: 50px auto;
+}
+#kurse-list {
+    list-style: none;
+    padding: 0;
+    width: 100%
+}
+
+#kurse-list li {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #333;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+a.anmelden, a.anmelden:visited {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    font-size: 1.2em;
+    color: #d33e52;
+    border: 2px solid #d33e52;
+    /*background-color: #d33e52;*/
+    padding: 20px;
+}
+a.anmelden:hover {
+    background-color: #d33e52;
+    color: #FFF;
+}
+
+#kurse-list h2, #kurse-list h3 {
+    font-weight: 200;
+    margin: 0;
+    padding: 5px;
+}
+
+#kurse-list h2 {
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+}
+.anfaengerkurse h1{
+    padding-bottom: 30px;
+}
+.anfaengerkurse p{
+    padding-bottom: 50px;
+}
+
+/* ------------ Footer ------------ */
+
 footer {  
     position: absolute;
     bottom: -40px;
@@ -138,10 +204,10 @@ header .logo {
 footer .logo{
     margin: 0 auto;
 }
-footer a, footer a:visited {
+footer a, footer a:visited, .red, .red:visited {
     color: #d33e52;
 }
-footer a:hover {
+footer a:hover, .red:hover{
     color: #333;
 }
 footer ul {
@@ -170,6 +236,10 @@ footer h3 {
 footer p {
     margin: 0
 }
+
+/* ----------- SLIDESHOW ------------- */
+/* Quelle: http://www.alessioatzeni.com/CSS3-Cycle-Image-Slider/ */
+
 #slideshow {
     margin: 40px auto;
     width: 90%;
@@ -177,6 +247,7 @@ footer p {
     border: 1px solid #DDD;
     overflow: hidden;
 }
+
 #slideshow img {
     height: 500px;
     margin: 0 auto;
@@ -184,15 +255,6 @@ footer p {
     margin-right: 50%;
     margin-left: 0%;
 }
-/* ----------- SLIDESHOW ------------- */
-/* source: http://www.alessioatzeni.com/CSS3-Cycle-Image-Slider/ */
-
-/* LAYOUT */
-/*#slideshow {
-    margin:20px auto;
-    overflow:hidden;
-    width:960px;
-}*/
 
 /* CONTENT SLIDER */
 #content-slider {
@@ -266,18 +328,6 @@ footer p {
     line-height:60px;
     padding:0 0 0 20px;
 }
-#slider li#first:hover .tooltip, 
-#slider li#second:hover .tooltip, 
-#slider li#third:hover .tooltip, 
-#slider li#fourth:hover .tooltip, 
-#slider li#fifth:hover .tooltip {
-    left:0px;
-}
-/*#slider:hover li, 
-#slider:hover .progress-bar {
-    -moz-animation-play-state:paused;
-    -webkit-animation-play-state:paused;
-}*/
 
 /* PROGRESS BAR */
 .progress-bar { 
@@ -288,4 +338,125 @@ footer p {
     background:rgba(211, 62, 82, 1);
     -moz-animation:fullexpand 25s ease-out infinite;
     -webkit-animation:fullexpand 25s ease-out infinite;
+}
+
+/* ----------- POPUP ------------- */
+/* Quelle: http://www.sevensignature.com/blog/code/pure-css-popup-without-javascript/ */
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #d33e52;
+  border: 2px solid #d33e52;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #FFF;
+/*  transition: all 0.3s ease-out;*/
+}
+.submit {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #d33e52 !important;
+    margin-top: 20px;
+}
+.button:hover {
+  background: #d33e52;
+  color: #FFF !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+/*  transition: opacity 500ms;*/
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 150px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 350px;
+  height: 500px;
+  position: relative;
+/*  transition: all 1s ease-in-out;*/
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #333 !important;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+/*  transition: all 200ms;*/
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d33e52;
+}
+.popup .content {
+    padding-top: 30px;
+    height: 420px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.popup input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input {
+    border: 1px solid #666;
+    padding: 5px 2px 5px 2px;
+}
+.input:focus{
+    border-color: #d33e52;
+}
+.popup select {
+    margin-bottom: 15px;
+}
+.right {
+    float: right;
+}
+
+#erfolg-content{
+    background-color: #FFF;
+    width: 100px;
+    height: 100px;
+    width: 80%;
+    height: 80%;
+    top: 80px;
+    color: #d33e52;
+    font-size: 10em;
+    text-align: center;
+    padding-top: 60px;
+    margin: 60px auto;
 }
