@@ -612,9 +612,6 @@ span.event {
 .stdtraining strong{
 	color: #d33e52;
 }
-.stdtraining u{
-	color: #d33e52;
-}
 
 .left {
 	float:left;

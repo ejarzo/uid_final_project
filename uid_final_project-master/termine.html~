@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Anmelden - Kinder | JKA-Karate Dojo Calw</title>
+    <title>Kalender | JKA-Karate Dojo Calw</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
 
@@ -26,28 +26,97 @@
             </header>
             <nav>
                 <a href="#">ÜBER UNS</a>
-                <div class="dropdown active-page">TRAINING
+                <div class="dropdown">TRAINING
                     <div class="dropdown-content">
                         <a href="#">Trainingszeiten</a>
-                        <a href="anfaengerkurse.html" class="active-page">Anfängerkurse</a>
+                        <a href="anfaengerkurse.html">Anfängerkurse</a>
                         <a href="#">Einzeltraining</a>
-                        <a href="12-std-training.html">12 Stunden Training</a>
+                        <a href="#">12 Stunden Training</a>
                         <a href="#">Für Kinder</a>
                         <a href="#">Für Senioren</a>
                     </div>
                 </div>
-                <a href="termine.html">TERMINE</a>
+                <a href="termine.html" class="active-page">TERMINE</a>
                 <div class="dropdown">GÄSTE
                     <div class="dropdown-content">
-                        <a href="12-std-training.html">12 Stunden Training</a>
+                        <a href="#">12 Stunden Training</a>
                         <a href="#">Lehrgänge</a>
                     </div>
                 </div>            
             </nav>
-            <div id="content" class="anfaengerkurse">
-                <h1>Anmelden - Kinder</h1>
-                
-            </div>
+            <div class="content">
+   <div id="calendar">
+     <div id="bottom-paper"></div>
+     <div id="top-paper"></div>
+     <div id="salmon-header"></div>
+     <div id="month-title">Oktober 2016 <span class="right">Suche: <input type="text" class="input" name="suche"></span></div>
+     <div id="grey-header"></div>
+     <div id="days-of-the-week">MON TUE WED THU FRI SAT SUN</div>
+     
+     <div id="column-one">
+     <li><span class="other">26</span></li>
+     <li>3</li>
+     <li>10</li>
+     <li>17</li>
+     <li>24</li>
+<li>31</li>
+     </div>
+     
+     <div id="column-two">
+     <li><span class="other">27</span></li>
+     <li>4</li>
+     <li>11</li>
+     <li>18</li>
+     <li>25</li>
+<li><span class="other">1</span></li>
+     </div>
+     
+     <div id="column-three">
+     <li><span class="other">28</span></li>
+     <li>5</li>
+     <li>13</li>
+     <li>19</li>
+     <li>26</li>
+<li><span class="other">2</span></li>
+     </div>
+     
+     <div id="column-four">
+     <li><span class="other">29</span></li>
+     <li>6</li>
+     <li>14</li>
+     <li>20</li>
+     <li>27</li>
+<li><span class="other">3</span></li>
+     </div>
+    
+    <div id="column-five">
+     <li><span class="other">30</span></li>
+     <li>7</li>
+     <li><span class="event">15</span></li>
+     <li>21</li>
+     <li>28</li>
+<li><span class="other">4</span></li>
+     </div>
+     
+     <div id="column-six">
+     <li><span class="event">1</span></li>
+     <li>8</li>
+     <li>16</li>
+     <li><span class="event">22</span></li>
+     <li>29</li>
+<li><span class="other">5</span></li>
+     </div>
+     
+     <div id="column-seven">
+     <li>2</li>
+     <li>9</li>
+     <li>17</li>
+     <li>23</li>
+     <li>30</li>
+<li><span class="other">6</span></li>
+     </div>
+    </div><!-- end #calendar -->
+  </div><!-- end .content -->
         </div>
         <footer>
             <div class="container">

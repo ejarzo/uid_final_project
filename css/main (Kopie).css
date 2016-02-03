@@ -504,7 +504,7 @@ footer p {
 
 #month-title {
 
-    text-align: left;
+    text-align: center;
     margin-top: -37px;
     font-size: 20px;
     color: #fff;
@@ -592,32 +592,4 @@ span.event {
     font-weight: bold;
 }
 
-/*---12std---*/
-
-.stdtraining h1 {
-	padding-top: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	text-align:center;
-}
-.stdtraining h3{
-	text-align:center;
-	font-weight: 200;
-}
-.stdtraining p {
-	margin-right: 220px;
-	margin-left: 220px;
-	text-align:justify;
-}
-.stdtraining strong{
-	color: #d33e52;
-}
-.stdtraining u{
-	color: #d33e52;
-}
-
-.left {
-	float:left;
-	margin-right:10px;
-	margin-left: 100px;
-}
+span.other { color: #dcdbdb }

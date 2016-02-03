@@ -25,13 +25,13 @@
                 </ul>
             </header>
             <nav>
-                <a href="#">ÜBER UNS</a>
+                <a href="ueber-uns.html">ÜBER UNS</a>
                 <div class="dropdown active-page">TRAINING
                     <div class="dropdown-content">
                         <a href="#">Trainingszeiten</a>
                         <a href="anfaengerkurse.html" class="active-page">Anfängerkurse</a>
                         <a href="#">Einzeltraining</a>
-                        <a href="12-std-training.html">12 Stunden Training</a>
+                        <a href="#">12 Stunden Training</a>
                         <a href="#">Für Kinder</a>
                         <a href="#">Für Senioren</a>
                     </div>
@@ -39,7 +39,7 @@
                 <a href="termine.html">TERMINE</a>
                 <div class="dropdown">GÄSTE
                     <div class="dropdown-content">
-                        <a href="12-std-training.html">12 Stunden Training</a>
+                        <a href="#">12 Stunden Training</a>
                         <a href="#">Lehrgänge</a>
                     </div>
                 </div>            
