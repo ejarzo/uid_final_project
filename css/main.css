@@ -50,7 +50,6 @@ header ul li {
     width: 30px;
     float: right;
     margin-left: 5px;
-    /*border: 1px solid #DDD;*/
 }
 header ul li img{
     width: 100%;
@@ -157,7 +156,6 @@ a.anmelden, a.anmelden:visited {
     font-size: 1.2em;
     color: #d33e52;
     border: 2px solid #d33e52;
-    /*background-color: #d33e52;*/
     padding: 20px;
 }
 a.anmelden:hover {
@@ -266,7 +264,6 @@ footer p {
 #slider {
     background:#333;
     border:2px solid #333;
-    /* box-shadow:1px 1px 5px rgba(0,0,0,0.7); */
     height:100%;
     width:100%;
     margin:0px auto 0;
@@ -361,7 +358,6 @@ footer p {
   text-decoration: none;
   cursor: pointer;
   background-color: #FFF;
-/*  transition: all 0.3s ease-out;*/
 }
 .submit {
     display: block;
@@ -437,9 +433,6 @@ footer p {
 .input:focus{
     border: 2px solid #d33e52;
     padding: 4px 2px 4px 2px;
-
-/*
-    border-color: #d33e52;*/
     outline: none;
 }
 .popup select {
@@ -495,11 +488,9 @@ footer p {
     padding-bottom: 4px;
     font-size: 2em;
 }
-/*li { list-style: none }*/
 .search {
     width: 250px;
     height: 40px;
-/*    padding: 10px;*/
     position: relative;
     display: inline-block;
     top: 10px;
