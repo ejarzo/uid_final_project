@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 a, a:visited {
     color: #333;
@@ -25,7 +25,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin-bottom: 160px;
+    margin-bottom: 180px;
 }
 #wrapper {
     width: 100%;
@@ -136,13 +136,13 @@ nav a:hover, nav .dropdown:hover {
     width: 80%;
     margin: 50px auto;
 }
-#kurse-list {
+#item-list {
     list-style: none;
     padding: 0;
     width: 100%
 }
 
-#kurse-list li {
+#item-list li {
     width: 100%;
     height: 100px;
     border-top: 2px solid #333;
@@ -165,13 +165,13 @@ a.anmelden:hover {
     color: #FFF;
 }
 
-#kurse-list h2, #kurse-list h3 {
+#item-list h2, #item-list h3 {
     font-weight: 200;
     margin: 0;
     padding: 5px;
 }
 
-#kurse-list h2 {
+#item-list h2 {
     font-weight: 400;
     border-bottom: 1px solid #333;
     display: inline-block;
@@ -191,7 +191,7 @@ footer {
     width: 100%;
     max-width: 1000px;
     border-top: 2px solid #333;
-    height: 160px;
+    height: 180px;
 }
 header .logo {
     margin-top: 15px;
@@ -219,7 +219,7 @@ footer ul {
 footer ul li {
     display: inline-block;
 /*    width: 100px;*/
-    vertical-align: middle;
+    vertical-align: top;
     text-align: left;
     padding: 0 20px 0 20px;
 }
@@ -376,47 +376,44 @@ footer p {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: -40px;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-/*  transition: opacity 500ms;*/
-  visibility: hidden;
-  opacity: 0;
-  z-index: 5;
+    position: absolute;
+    top: 0;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
 }
 .overlay:target {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup {
-  margin: 150px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 350px;
-  height: 500px;
-  position: relative;
-/*  transition: all 1s ease-in-out;*/
+    margin: 150px auto;
+    padding: 20px 40px 20px 40px;
+    background: #fff;
+    width: 350px;
+    height: 480px;
+    position: relative;
+    border-radius: 3px;
 }
 
 .popup h2 {
-  margin-top: 0;
-  color: #333;
-  border-bottom: 2px solid #333 !important;
+    margin-top: 5px !important;
+    color: #333;
+    border-bottom: 2px solid #333 !important;
 }
 .popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-/*  transition: all 200ms;*/
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
 }
 .popup .close:hover {
   color: #d33e52;
@@ -424,7 +421,7 @@ footer p {
 .popup .content {
     padding-top: 30px;
     height: 420px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow: auto;
 }
@@ -438,7 +435,11 @@ footer p {
     padding: 5px 2px 5px 2px;
 }
 .input:focus{
-    border-color: #d33e52;
+    border: 2px solid #d33e52;
+    padding: 4px 2px 4px 2px;
+
+/*
+    border-color: #d33e52;*/
     outline: none;
 }
 .popup select {
@@ -455,176 +456,80 @@ footer p {
     width: 80%;
     height: 80%;
     top: 80px;
-    color: #d33e52;
-    font-size: 10em;
     text-align: center;
     padding-top: 60px;
     margin: 60px auto;
 }
-
-/* ----------- KALENDER ------------- */
-/* Quelle:http://cssdeck.com/labs/pure-css-calendar/ */
-
-#calendar {
-    width: 600px;
-    height: 400px;/*318px*/
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
+.check {
+    font-size: 10em;
+    color: #d33e52;
 }
 
-#bottom-paper {
-    margin-top: 50px;
-    background-color: #fff;
-    width: 600px;
-    height: 318px;/*318px*/
-}
+/* ----------- Termine ------------- */
 
-#top-paper {
-    text-align: center;
-    margin-top: -327px;
-    margin-left: -12px;
-    background-color: #fff;
-    width: 600px;
-    height: 350px;/*318px*/
+#termine {
+    width: 80%;
+    margin: 60px auto;
 }
-
-#calender-header {
-    height: auto;
-    margin-left: -12px;
-    margin-top: -350px;
-}
-
 #month-title {
     width: 100%;
     text-align: left;
-    margin-top: -37px;
     font-size: 2em;
     color: #333;
     border-bottom: 2px solid #333;
 }
-
-#grey-header {
-    text-align: center;
-    word-spacing: 10px;
-    margin-top: -30px;
-    width: 100%;
-    height: 50px;
-    margin-top: 14px;
+.termine-list {
+    padding-bottom: 50px !important;
+}
+.termine-list li{
+    height: auto !important;
+    border: none !important;
+    margin-bottom: 20px !important;
+}
+.termine-list li h2 {
+    border: none !important;
 }
 
-#days-of-the-week {
-    text-align: center;
-    word-spacing: 10px;
-    margin-top: -35px;
-    color: #444;
-}
 #month-title .material-icons {
     vertical-align: middle;
     padding-bottom: 4px;
     font-size: 2em;
 }
-li { list-style: none }
+/*li { list-style: none }*/
 .search {
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
+/*    padding: 10px;*/
     position: relative;
     display: inline-block;
-    top: 5px;
-}
-#column-one {
-    margin-left: -275px;
-    margin-top: 30px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-two {
-    margin-left: -175px;
-    margin-top: -210px; /* -35px per line*/
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-three {
-    margin-left: -84px;
-    margin-top: -210px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-four {
-    margin-left: 15px;
-    margin-top: -210px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-five {
-    margin-left: 100px;
-    margin-top: -210px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-six {
-    margin-left: 188px;
-    margin-top: -210px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-#column-seven {
-    margin-left: 275px;
-    margin-top: -210px;
-    line-height: 35px;
-    text-align: center;
-    color: #b7b7b7;
-}
-
-span.event {
-    color: #d33e52;
-    font-weight: bold;
-    padding: 2px;
-}
-span.event:hover {
-    cursor: pointer;
-    background-color: #d33e52;
-    color: #fff;
+    top: 10px;
+    font-size: .7em;
 }
 
 /*---12std---*/
 
 .stdtraining h1 {
-	padding-top: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	text-align:center;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align:center;
 }
 .stdtraining h3{
-	text-align:center;
-	font-weight: 200;
+    text-align:center;
+    font-weight: 200;
 }
 .stdtraining p {
-	margin-right: 220px;
-	margin-left: 220px;
-	text-align:justify;
-}
-.stdtraining strong{
-	color: #d33e52;
-}
-.stdtraining u{
-	color: #d33e52;
+    margin-right: 220px;
+    margin-left: 220px;
+    text-align:justify;
 }
 
 .left {
-	float:left;
-	margin-right:10px;
-	margin-left: 100px;
+    float:left;
+    margin-right:10px;
+    margin-left: 100px;
+}
+
+strong.red {
+    color: #d33e52 !important;
 }
