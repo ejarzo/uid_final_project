@@ -5,7 +5,8 @@
     <title>Kalender | JKA-Karate Dojo Calw</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -19,9 +20,9 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="http://www.djkb.com/home/" target="blank"><img src="img/djkb-logo.svg" alt="home"></a></li>
-                    <li><a href="https://www.facebook.com/JKA-Karate-Dojo-Calw-e-V-146567115365595/" target="blank" alt="facebook"><img src="img/fb-logo.svg"></a></li>
-                    <li><a href="mailto:hans@jka-karate-calw.de"><img src="img/mail-icon.svg" alt="email"></a></li>
+                    <li><a href="http://www.djkb.com/home/" target="blank"><img src="img/djkb-logo.svg" alt="djkbh homepage" title="DJKB Homepage"></a></li>
+                    <li><a href="https://www.facebook.com/JKA-Karate-Dojo-Calw-e-V-146567115365595/" target="blank" alt="facebook" title="Facebook"><img src="img/fb-logo.svg"></a></li>
+                    <li><a href="mailto:hans@jka-karate-calw.de"><img src="img/mail-icon.svg" alt="email" title="Email"></a></li>
                 </ul>
             </header>
             <nav>
@@ -48,10 +49,16 @@
    <div id="calendar">
      <div id="bottom-paper"></div>
      <div id="top-paper"></div>
-     <div id="salmon-header"></div>
-     <div id="month-title">Oktober 2016 <span class="right">Suche: <input type="text" class="input" name="suche"></span></div>
+     <div id="calender-header"></div>
+     <div id="month-title">
+        <a href="#" class="red"><i class="material-icons">keyboard_arrow_left</i></a>
+        Oktober 2016 
+        <a href="#" class="red"><i class="material-icons">keyboard_arrow_right</i></a>
+        <span class="right">
+            <input type="text" class="input search" name="suche" placeholder="Suche"></span>
+    </div>
      <div id="grey-header"></div>
-     <div id="days-of-the-week">MON TUE WED THU FRI SAT SUN</div>
+     <div id="days-of-the-week">MON DEIN MIT DON FRI SAM SON</div>
      
      <div id="column-one">
      <li><span class="other">26</span></li>

@@ -439,6 +439,7 @@ footer p {
 }
 .input:focus{
     border-color: #d33e52;
+    outline: none;
 }
 .popup select {
     margin-bottom: 15px;
@@ -465,19 +466,17 @@ footer p {
 /* Quelle:http://cssdeck.com/labs/pure-css-calendar/ */
 
 #calendar {
-    width: 484px;
-    height: 350px;/*318px*/
+    width: 600px;
+    height: 400px;/*318px*/
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
 }
 
 #bottom-paper {
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: #fff;
-    -webkit-box-shadow: 1px 5px 10px #272727;
-    -moz-box-shadow: 1px 5px 10px #272727;
-    box-shadow: 1px 5px 10px #272727;
-    width: 484px;
+    width: 600px;
     height: 318px;/*318px*/
 }
 
@@ -486,40 +485,32 @@ footer p {
     margin-top: -327px;
     margin-left: -12px;
     background-color: #fff;
-    -webkit-box-shadow: 1px 5px 10px #272727;
-    -moz-box-shadow: 1px 5px 10px #272727;
-    box-shadow: 1px 5px 10px #272727;
-    width: 510px;
+    width: 600px;
     height: 350px;/*318px*/
 }
 
-#salmon-header {
-    background-color: #dd5b5b;
-    width: 510px;
-    height: 50px;
+#calender-header {
+    height: auto;
     margin-left: -12px;
     margin-top: -350px;
-    border-bottom: 2px solid #b84c4c;
 }
 
 #month-title {
-
+    width: 100%;
     text-align: left;
     margin-top: -37px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #333;
 }
 
 #grey-header {
     text-align: center;
     word-spacing: 10px;
     margin-top: -30px;
-    background-color: #dfdfdf;
-    width: 510px;
+    width: 100%;
     height: 50px;
-    margin-left: -12px;
     margin-top: 14px;
-    border-bottom: 2px solid #b4b4b4;
 }
 
 #days-of-the-week {
@@ -528,9 +519,19 @@ footer p {
     margin-top: -35px;
     color: #444;
 }
-
+#month-title .material-icons {
+    vertical-align: middle;
+    padding-bottom: 4px;
+    font-size: 2em;
+}
 li { list-style: none }
-
+.search {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+}
 #column-one {
     margin-left: -275px;
     margin-top: 30px;
@@ -590,6 +591,12 @@ li { list-style: none }
 span.event {
     color: #d33e52;
     font-weight: bold;
+    padding: 2px;
+}
+span.event:hover {
+    cursor: pointer;
+    background-color: #d33e52;
+    color: #fff;
 }
 
 /*---12std---*/
